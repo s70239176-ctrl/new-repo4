@@ -8,3 +8,10 @@ export default defineConfig({
     open: true,
   },
 })
+export default defineConfig({
+  plugins: [react()],
+  base: './',   // ← add this line
+  build: {
+    outDir: 'dist',
+  },
+})
